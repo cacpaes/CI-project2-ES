@@ -336,6 +336,124 @@ p {
 
 /* end tour section */
 
+/* tourDetails section */
+#tourDetails{
+    display: none;
+}
+#tourDetails .tourDetails {
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 95px 0;
+}
+#tourDetails .tourDetails-header h2 {
+    margin-bottom: 55px;
+}
+
+#tourDetails .tourDetail-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin:10px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+#tourDetails .tourDetail-info {
+    padding: 30px;
+    flex-basis: 50%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(60deg, #D97A9A 0%, #84CEE3 100%);
+    color: white;
+}
+#tourDetails .tourDetail-info h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #84CEE3;
+}
+#tourDetails .tourDetail-info h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #D97A9A;
+}
+#tourDetails .tourDetail-info p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+#tourDetails .tourDetail-img {
+    flex-basis: 50%;
+    height: 500px;
+    width: 500px;
+    overflow: hidden;
+    position: relative;
+}
+#tourDetails .tourDetail-img:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    /* background-image: linear-gradient(60deg, #29323c 0%, #485563 100%); */
+    opacity: .7;
+}
+#tourDetails .tourDetail-img img {
+    transition: .3s ease transform;
+}
+#tourDetails .tourDetail-item:hover .tourDetail-img img {
+    transform: scale(1.1);
+}
+/* end tourDetails section */
+
+/* section more */
+#more .more {
+    flex-direction: column;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+#more .more-top {
+    max-width: 550px;
+    margin: 0 auto;
+}
+#more .more-top h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    margin-bottom: 10px;
+}
+#more .more-form{
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+    width: 600px;
+}
+#more .more-form .more-form-input{
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    border: 1px solid black;
+    border-radius: .25rem;
+    font-family:  Montserrat;
+}
+
+#more .more-form-button{
+    text-align-last: center;
+}
+/* end section more */
+
 /* footer */
 #footer {
     background-image: linear-gradient(60deg, #D97A9A 0%, #84CEE3 100%);
@@ -378,3 +496,93 @@ p {
     font-size: 1.3rem;
 }
 /* end footer */
+
+/* modal */
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 50rem;
+    border-radius: 0.5rem;
+}
+
+.model-content h1{
+    text-align: center;
+}
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: white;
+}
+.close-button:hover {
+    background-color: white;
+}
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+/* end modal */
+
+/* keyframes*/
+@keyframes menu_puls {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.4);
+    }
+}
+@keyframes text_reveal_box {
+    50% {
+        width: 100%;
+        left: 0;
+    }
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+@keyframes text_reveal {
+    100% {
+        color: white;
+    }
+}
+@keyframes text_reveal_name {
+    100% {
+        color: #84CEE3;
+        font-weight: 500;
+    }
+}
+/* end keyframes */
+
+/* media query for mobile rotated*/
+@media screen and (max-width: 991px) {
+    /* home */
+    #home h2 {
+        font-size: 4rem;
+    }
+    /* end home */  
+}
