@@ -184,6 +184,158 @@ p {
 }
 /* end header section */
 
+/* home section */
+#home {
+    background-image: url(../images/victory-g7c03e2dcd_1500.jpg);
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+#home::after {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: '';
+    left: 0;
+    top: 0;
+    opacity: .7;
+    z-index: -1;
+}
+#home .home {
+    max-width: 1200px;
+    justify-content: flex-start;
+    margin: 0 auto;
+    padding: 0 50px;
+    
+}
+#home h2 {
+    color: #D97A9A;
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 3s;
+}
+    
+
+/* end home section */
+
+/* about section */
+#about .about {
+    max-width: 1200px;
+    flex-direction: column-reverse;
+    text-align: center;
+    margin: 0 auto;
+    padding: 100px 20px;
+}
+#about .col-left {
+    width: 250px;
+    height: 360px;
+}
+#about .col-right {
+    width: 100%;
+}
+#about .col-right h2 {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+#about .col-right h3 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 10px
+}    
+#about .col-right p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+#about .col-right .cta {
+    color: black;
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    font-size: 2rem;
+}
+#about .col-left .about-img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border: 10px solid white;
+}
+
+/* end about section */
+
+/* tours section */
+#tours .tours {
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+#tours .tour-top {
+    max-width: 550px;
+    margin: 0 auto;
+}
+#tours .tour-top h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    margin-bottom: 10px;
+}
+#tours .tour-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+#tours .tour-item {
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-size: cover;
+    margin: 10px 5%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+}
+#tours .tour-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(60deg, #D97A9A 0%, #84CEE3 100%);
+    opacity: .8;
+    z-index: -1;
+}
+#tours .tour-bottom .icon {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;
+}
+#tours .tour-item h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+#tours .tour-item p {
+    color: white;
+    text-align: left;
+}
+
+/* end tour section */
+
 /* footer */
 #footer {
     background-image: linear-gradient(60deg, #D97A9A 0%, #84CEE3 100%);
