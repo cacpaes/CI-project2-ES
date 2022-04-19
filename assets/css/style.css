@@ -586,3 +586,104 @@ p {
     }
     /* end home */  
 }
+
+/* media query for tablet */
+@media only screen and (min-width: 768px) {
+    h1.section-title {
+        font-size: 6rem;
+    }
+
+    /* tours section */
+    #tours .tour-bottom .tour-item {
+        flex-basis: 45%;
+        margin: 2.5%;
+    }
+    /* end tours section */
+
+    /* tourDetails */
+    #tourDetails .tourDetail-item {
+        flex-direction: row;
+    }
+    #tourDetails .tourDetail-item:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    #tourDetails .tourDetail-item {
+        height: 400px;
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+    #tourDetails  .tourDetail-info {
+        height: 100%;
+    }
+    #tourDetails  .tourDetail-img {
+        height: 100%;
+    }
+    
+    /* end tourDetail */
+
+    /* about */
+    #about .about {
+        flex-direction: row;
+        align-items: end;
+    }
+    #about .col-left {
+        width: 600px;
+        height: 400px;
+        padding-left: 60px;
+    }
+    #about .about .col-left .about-img::after {
+        left: -45px;
+        top: 34px;
+        height: 98%;
+        width: 98%;
+        border: 10px solid #84CEE3;
+    }
+    #about .col-right {
+        text-align: left;
+        padding: 30px;
+    }
+    #about .col-right h2 {
+        text-align: left;
+    }
+    /* end about */
+
+    /* info  */
+    #info .info {
+        flex-direction: column;
+        padding: 100px 0;
+        align-items: center;
+        justify-content: center;
+        min-width: 20vh;
+    }
+    #info .info-items {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+    #info .info-item {
+        width: 30%;
+        margin: 0;
+        flex-direction: row;
+    }
+    #info .info-item .icon {
+        height: 100px;
+        width: 100px;
+    }
+    #info .info-item .icon img {
+        object-fit: contain;
+    }
+    #info .info-item .info-info {
+        width: 100%;
+        text-align: left;
+        padding-left: 20px;
+    }
+    /* end info  */
+
+    
+}
+/* end media query for tablet */ 
+
+/* end media query for desktop */
