@@ -1,6 +1,6 @@
 //Email sent via EmailJS.com
 function sendMail(contactForm) {
-    //to be initialized only when emails are shoot
+    //initialized only when emails are shoot
     (
     function() {
         emailjs.init("user_0BZMRCosKk3Deu2SP4gSu");
