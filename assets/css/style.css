@@ -452,6 +452,13 @@ p {
 #more .more-form-button{
     text-align-last: center;
 }
+#more .more-form-button .cta {
+    color: #ffff;
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    font-size: 1.8rem;
+    background-image: linear-gradient(60deg, #D97A9A 0%, #84CEE3 100%);
+}
 /* end section more */
 
 #link-top {
