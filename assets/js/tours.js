@@ -1,5 +1,5 @@
 /*
-funtion responsible for open the tour details section.
+funtion responsible for open the tour details .
 */
 function tourSelected(tourId) {
     //variables to get the html elements that will host the dynamic content
