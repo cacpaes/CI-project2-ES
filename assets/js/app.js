@@ -18,7 +18,7 @@ menu_item.forEach((item) => {
 //end of credit menu
 
 
-/*change the color of the menu on scrolling to other sections below*/
+/*change the color of the menu on scrolling to other sections */
 document.addEventListener('scroll', () => {
 	var scroll_position = window.scrollY;
 	if (scroll_position > 250) {
